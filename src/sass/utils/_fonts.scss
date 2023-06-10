@@ -1,0 +1,55 @@
+/* Montserrat 500 Medium */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('../fonts/montserrat-500/montserrat-500.woff2') format('woff2'),
+    url('../fonts/montserrat-500/montserrat-500.woff') format('woff'),
+    url('../fonts/montserrat-500/montserrat-500.ttf') format('truetype'),
+    url('../fonts/montserrat-500/montserrat-500.eot')
+      format('embedded-opentype');
+}
+
+/* Montserrat 600 SemiBold */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('../fonts/montserrat-600/montserrat-600.woff2') format('woff2'),
+    url('../fonts/montserrat-600/montserrat-600.woff') format('woff'),
+    url('../fonts/montserrat-600/montserrat-600.ttf') format('truetype'),
+    url('../fonts/montserrat-600/montserrat-600.eot')
+      format('embedded-opentype');
+}
+
+/* Montserrat 700 Bold */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+    url('../fonts/montserrat-700/montserrat-700.woff2') format('woff2'),
+    url('../fonts/montserrat-700/montserrat-700.woff') format('woff'),
+    url('../fonts/montserrat-700/montserrat-700.ttf') format('truetype'),
+    url('../fonts/montserrat-700/montserrat-700.eot')
+      format('embedded-opentype');
+}
+
+/* Manrope 600 SemiBold */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Manrope SemiBold'), local('Manrope-SemiBold'),
+    url('../fonts/montserrat-600/Manrope-SemiBold.woff2') format('woff2'),
+    url('../fonts/montserrat-600/Manrope-SemiBold.woff') format('woff'),
+    url('../fonts/montserrat-600/Manrope-SemiBold.ttf') format('truetype'),
+    url('../fonts/montserrat-600/Manrope-SemiBold.eot')
+      format('embedded-opentype');
+}
