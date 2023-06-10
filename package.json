@@ -1,6 +1,6 @@
 {
   "name": "sky-union",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "",
   "homepage": "https://svoits.github.io/sky-union",
   "scripts": {
@@ -18,6 +18,8 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
