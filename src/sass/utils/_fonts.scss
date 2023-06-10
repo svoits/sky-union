@@ -40,6 +40,20 @@
       format('embedded-opentype');
 }
 
+/* Manrope 200 ExtraLight */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Manrope ExtraLight'), local('Manrope-ExtraLight'),
+    url('../fonts/manrope-200/Manrope-ExtraLight.woff2') format('woff2'),
+    url('../fonts/manrope-200/Manrope-ExtraLight.woff') format('woff'),
+    url('../fonts/manrope-200/Manrope-ExtraLight.ttf') format('truetype'),
+    url('../fonts/manrope-200/Manrope-ExtraLight.eot')
+      format('embedded-opentype');
+}
+
 /* Manrope 600 SemiBold */
 @font-face {
   font-family: 'Manrope';
