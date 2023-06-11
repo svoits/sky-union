@@ -1,6 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
+  min-width: 320px;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 500;
