@@ -33,8 +33,12 @@
 .gallery-list {
   display: flex;
   flex-direction: column;
-  row-gap: 72px;
+  row-gap: 46px;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    row-gap: 72px;
+  }
 
   @media screen and (min-width: 1440px) {
     max-height: 1576px;
