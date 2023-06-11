@@ -39,9 +39,13 @@
   font-weight: 500;
   line-height: 1.23;
 
+  @media screen and (max-width: 319.98px) {
+    font-size: 13.7px;
+  }
   @media screen and (min-width: 375px) {
     font-size: 16px;
   }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 64px;
     font-size: 24px;
