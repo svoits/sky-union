@@ -5,4 +5,7 @@ export default {
   mobileBackdrop: document.querySelector('.js-mobile-backdrop'),
   burgerIcon: document.querySelector('.burger-icon'),
   closeIcon: document.querySelector('.close-icon'),
+  toHomeBtn: document.querySelectorAll('.js-nav-home'),
+  toAboutBtn: document.querySelectorAll('.js-nav-about'),
+  toGalleryBtn: document.querySelectorAll('.js-nav-gallery'),
 };
