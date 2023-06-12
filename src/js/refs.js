@@ -5,4 +5,6 @@ export default {
   mobileBackdrop: document.querySelector('.js-mobile-backdrop'),
   burgerIcon: document.querySelector('.burger-icon'),
   closeIcon: document.querySelector('.close-icon'),
+  allTranslateEls: document.querySelectorAll('.i18n'),
+  allTranslateBtns: document.querySelectorAll('.js-lang-btn'),
 };
