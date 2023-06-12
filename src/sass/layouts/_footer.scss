@@ -1,0 +1,69 @@
+.page-footer {
+  min-width: 320px;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  background-color: $footer-bg-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      column-gap: 48px;
+    }
+    @media screen and (min-width: 1440px) {
+      column-gap: 100px;
+    }
+  }
+}
+
+.footer-social-list {
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-social-item {
+  display: inline-flex;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  @media screen and (max-width: 334.98px) {
+    font-size: 4.15vw;
+  }
+  @media screen and (max-width: 319.98px) {
+    font-size: 13.28px;
+  }
+}
+
+.social-icon {
+  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+  }
+}

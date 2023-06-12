@@ -192,7 +192,8 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-width: 320px;
+  height: 100%;
   z-index: 1;
   background: rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(2.5px);
