@@ -66,3 +66,16 @@
     }
   }
 }
+
+a.gallery {
+  display: block;
+  position: relative;
+  top: -172px;
+  visibility: hidden;
+  @media screen and (min-width: 768px) {
+    top: -222px;
+  }
+  @media screen and (min-width: 1440px) {
+    top: -205px;
+  }
+}
