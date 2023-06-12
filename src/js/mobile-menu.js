@@ -49,7 +49,7 @@ import refs from './refs';
     refs.mobileMenu.classList.remove('is-open');
     refs.mobileBackdrop.classList.remove('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    enableBodyScroll(document.body);
   }
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -60,6 +60,6 @@ import refs from './refs';
     refs.mobileMenu.classList.remove('is-open');
     refs.mobileBackdrop.classList.remove('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    enableBodyScroll(document.body);
   });
 })();
