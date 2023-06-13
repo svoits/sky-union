@@ -77,6 +77,12 @@
   }
 }
 
+.about-lightbox-link {
+  @media screen and (max-width: 1023.98px) {
+    cursor: default;
+  }
+}
+
 a.about {
   display: block;
   position: relative;

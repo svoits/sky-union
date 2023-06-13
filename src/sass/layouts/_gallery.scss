@@ -67,6 +67,12 @@
   }
 }
 
+.gallery-lightbox-link {
+  @media screen and (max-width: 1023.98px) {
+    cursor: default;
+  }
+}
+
 a.gallery {
   display: block;
   position: relative;
