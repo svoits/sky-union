@@ -20,6 +20,7 @@
   "dependencies": {
     "basiclightbox": "^5.0.4",
     "body-scroll-lock": "^4.0.0-beta.0",
+    "i18next": "^22.5.1",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {

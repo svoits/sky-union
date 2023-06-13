@@ -8,4 +8,6 @@ export default {
   toHomeBtn: document.querySelectorAll('.js-nav-home'),
   toAboutBtn: document.querySelectorAll('.js-nav-about'),
   toGalleryBtn: document.querySelectorAll('.js-nav-gallery'),
+  allTranslateEls: document.querySelectorAll('.i18n'),
+  allTranslateBtns: document.querySelectorAll('.js-lang-btn'),
 };
