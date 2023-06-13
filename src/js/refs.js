@@ -10,4 +10,6 @@ export default {
   toGalleryBtn: document.querySelectorAll('.js-nav-gallery'),
   allTranslateEls: document.querySelectorAll('.i18n'),
   allTranslateBtns: document.querySelectorAll('.js-lang-btn'),
+  aboutGalleryList: document.querySelector('.about-gallery-list'),
+  galleryList: document.querySelector('.gallery-list'),
 };
