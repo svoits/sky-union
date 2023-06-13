@@ -1,6 +1,7 @@
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
+  min-height: 630px;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5),
@@ -63,6 +64,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    min-height: 870px;
     padding-top: 280px;
     padding-bottom: 280px;
     background-image: linear-gradient(
@@ -108,6 +110,7 @@
     font-size: 64px;
   }
   @media screen and (min-width: 1440px) {
+    max-width: 850px;
     font-size: 80px;
   }
 }
@@ -132,7 +135,7 @@
 
   @media screen and (min-width: 768px) {
     font-size: 24px;
-    width: 576px;
+    width: 602px;
   }
   @media screen and (min-width: 1440px) {
     width: 628px;
