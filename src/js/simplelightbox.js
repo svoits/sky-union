@@ -1,3 +1,4 @@
+import throttle from 'lodash.throttle';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import refs from './refs';
@@ -6,7 +7,7 @@ let lightboxAbout = null;
 let lightboxGallery = null;
 
 // Attach event listener to window resize event
-window.addEventListener('resize', updateLightboxes);
+window.addEventListener('resize', throttle(updateLightboxes, 500));
 
 // Attach event listener to img in tag <a></a> click event to prevent image opening on click
 refs.aboutGalleryList.addEventListener('click', handleImageClick);
