@@ -2,7 +2,6 @@ import i18next from 'i18next';
 import refs from './refs';
 import languages from '../languages/languages.json';
 
-const html = document.querySelector('html');
 const LANG_LS_KEY = 'lang';
 const storedLang = localStorage.getItem(LANG_LS_KEY);
 const defaultLang = 'ua';
@@ -56,9 +55,9 @@ function updateActiveButton() {
 // Update HTML lang attribute
 function updateHTMLLangAttr(lang) {
   if (lang === 'ua') {
-    html.lang = 'uk';
+    refs.html.lang = 'uk';
   } else {
-    html.lang = lang;
+    refs.html.lang = lang;
   }
 }
 

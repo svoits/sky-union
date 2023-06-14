@@ -12,4 +12,5 @@ export default {
   allTranslateBtns: document.querySelectorAll('.js-lang-btn'),
   aboutGalleryList: document.querySelector('.about-gallery-list'),
   galleryList: document.querySelector('.gallery-list'),
+  html: document.querySelector('html'),
 };
