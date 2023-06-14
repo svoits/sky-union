@@ -81,11 +81,16 @@
   @media screen and (max-width: 1023.98px) {
     cursor: default;
   }
-  transform: scale(1);
-  transition: transform $transition;
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
+  @media screen and (min-width: 1024px) {
+    cursor: zoom-in;
+    & img {
+      transform: scale(1);
+      transition: transform $transition;
+    }
+    &:hover img,
+    &:focus img {
+      transform: scale(1.025);
+    }
   }
 }
 

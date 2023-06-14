@@ -43,10 +43,16 @@
   display: inline-flex;
   text-align: center;
   &.social-youtube {
-    color: #b2071d;
+    color: red;
   }
   &.social-discord {
     color: #5865f2;
+  }
+  transform: scale(1);
+  transition: transform $transition;
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
   }
 }
 
