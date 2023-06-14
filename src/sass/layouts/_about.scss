@@ -81,6 +81,12 @@
   @media screen and (max-width: 1023.98px) {
     cursor: default;
   }
+  transform: scale(1);
+  transition: transform $transition;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 }
 
 a.about {

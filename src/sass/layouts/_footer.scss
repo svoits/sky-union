@@ -42,6 +42,12 @@
 .footer-social-link {
   display: inline-flex;
   text-align: center;
+  &.social-youtube {
+    color: #b2071d;
+  }
+  &.social-discord {
+    color: #5865f2;
+  }
 }
 
 .footer-text {
@@ -62,8 +68,53 @@
 
 .social-icon {
   fill: currentColor;
+  filter: brightness(0) invert(1);
+  -webkit-transition: -webkit-filter $transition;
+  transition: -webkit-filter $transition;
+  -o-transition: filter $transition;
+  transition: filter $transition;
+  transition: filter $transition, -webkit-filter $transition;
+  &:hover,
+  &:focus {
+    filter: none;
+  }
   @media screen and (min-width: 768px) {
     width: 35px;
     height: 35px;
+  }
+}
+#inst-icon {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px; /* change this to change the size*/
+
+  filter: brightness(0) invert(1);
+  width: 40px;
+  height: 40px;
+
+  -webkit-transition: -webkit-filter $transition;
+  transition: -webkit-filter $transition;
+  -o-transition: filter $transition;
+  transition: filter $transition;
+  transition: filter $transition, -webkit-filter $transition;
+
+  &:hover,
+  &:focus {
+    filter: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
   }
 }

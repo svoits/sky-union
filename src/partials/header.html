@@ -4,6 +4,7 @@
       type="button"
       class="js-open-menu js-close-menu header-mobile-btn"
       aria-expanded="false"
+      aria-label="open mobile menu"
     >
       <svg width="40" height="40">
         <use
@@ -13,7 +14,7 @@
         <use class="close-icon" href="./images/svg/sprite.svg#close"></use>
       </svg>
     </button>
-    <a href="./index.html" class="logo">
+    <a href="./index.html" class="logo" aria-label="logo link">
       <svg class="logo-icon" width="47" height="50">
         <use href="./images/svg/sprite.svg#logo"></use>
       </svg>
@@ -28,28 +29,41 @@
           <button
             class="header-nav-link js-nav-home i18n"
             data-i18n="header-home"
+            aria-label="to home"
           ></button>
         </li>
         <li class="header-nav-item">
           <button
             class="header-nav-link js-nav-about i18n"
             data-i18n="header-about"
+            aria-label="to about section"
           ></button>
         </li>
         <li class="header-nav-item">
           <button
             class="header-nav-link js-nav-gallery i18n"
             data-i18n="header-gallery"
+            aria-label="to gallery section"
           ></button>
         </li>
       </ul>
     </nav>
     <div class="lang-btn-wrapper js-lang-container">
-      <button class="lang-btn js-lang-btn" type="button" data-lang="ua">
+      <button
+        class="lang-btn js-lang-btn"
+        type="button"
+        data-lang="ua"
+        aria-label="ukrainian language toggle"
+      >
         ua
       </button>
       <span class="lang-separator">|</span>
-      <button class="lang-btn js-lang-btn" type="button" data-lang="en">
+      <button
+        class="lang-btn js-lang-btn"
+        type="button"
+        data-lang="en"
+        aria-label="english language toggle"
+      >
         eng
       </button>
     </div>
@@ -58,11 +72,21 @@
 <div class="js-mobile-backdrop mobile-backdrop">
   <div class="js-menu-container mobile-menu-container">
     <div class="mobile-lang-btn-wrapper js-mobile-lang-btn-wrapper">
-      <button class="mobile-lang-btn js-lang-btn" type="button" data-lang="ua">
+      <button
+        class="mobile-lang-btn js-lang-btn"
+        type="button"
+        data-lang="ua"
+        aria-label="ukrainian language toggle"
+      >
         ua
       </button>
       <span class="lang-separator">|</span>
-      <button class="mobile-lang-btn js-lang-btn" type="button" data-lang="en">
+      <button
+        class="mobile-lang-btn js-lang-btn"
+        type="button"
+        data-lang="en"
+        aria-label="english language toggle"
+      >
         eng
       </button>
     </div>
@@ -72,18 +96,21 @@
           <button
             class="mobile-nav-link js-nav-home i18n"
             data-i18n="header-home"
+            aria-label="to home"
           ></button>
         </li>
         <li class="mobile-nav-item">
           <button
             class="mobile-nav-link js-nav-about i18n"
             data-i18n="header-about"
+            aria-label="to about section"
           ></button>
         </li>
         <li class="mobile-nav-item">
           <button
             class="mobile-nav-link js-nav-gallery i18n"
             data-i18n="header-gallery"
+            aria-label="to gallery section"
           ></button>
         </li>
       </ul>

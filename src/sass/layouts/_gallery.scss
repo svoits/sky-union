@@ -65,11 +65,25 @@
       margin-bottom: 0;
     }
   }
+  transform: scale(1);
+  transition: transform $transition;
+
+  // .gallery-lightbox-link:hover &,
+  // .gallery-lightbox-link:focus & {
+  //   transform: scale(1.2);
+  // }
 }
 
 .gallery-lightbox-link {
   @media screen and (max-width: 1023.98px) {
     cursor: default;
+  }
+
+  transform: scale(1);
+  transition: transform $transition;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
   }
 }
 
