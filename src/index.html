@@ -7,6 +7,7 @@
       name="description"
       content="Ласкаво просимо до Sky Union, інноваційної української команди незалежних розробників, заснованої у 2022 році. Ми присвячені створенню нових вражень, втіленню свіжих проектів та сприянню розвитку української геймдеву. Досліджуйте наші ігри та приєднуйтесь до нас у захоплюючій подорожі в світ захоплюючого геймплею."
     />
+
     <title>Sky Union - Game Studio</title>
 
     <!-- Favicon -->
@@ -35,6 +36,7 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="./sass/index.scss" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -42,11 +44,20 @@
     />
   </head>
   <body>
+    <!-- Preloader -->
+    <include src="./partials/components/preloader.html"></include>
+
+    <!-- Content -->
     <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/gallery.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/gallery.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
+
+    <!-- Mobile menu -->
+    <include src="./partials/components/mobile-menu.html"></include>
 
     <!-- JS Scripts -->
     <script type="module" src="./index.js"></script>
