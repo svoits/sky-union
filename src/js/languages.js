@@ -2,6 +2,7 @@ import i18next from 'i18next';
 import refs from './refs';
 import languages from '../languages/languages.json';
 
+const html = document.querySelector('html');
 const LANG_LS_KEY = 'lang';
 const storedLang = localStorage.getItem(LANG_LS_KEY);
 const defaultLang = 'ua';
@@ -26,6 +27,7 @@ i18next.init(
     i18next.addResourceBundle('en', 'translation', languages.en);
     updateContent();
     updateActiveButton();
+    updateHTMLLangAttr(i18next.language);
   }
 );
 
@@ -51,6 +53,15 @@ function updateActiveButton() {
   });
 }
 
+// Update HTML lang attribute
+function updateHTMLLangAttr(lang) {
+  if (lang === 'ua') {
+    html.lang = 'uk';
+  } else {
+    html.lang = lang;
+  }
+}
+
 // Language buttons event listeners
 refs.allTranslateBtns.forEach(button => {
   button.addEventListener('click', function () {
@@ -59,7 +70,9 @@ refs.allTranslateBtns.forEach(button => {
     i18next.changeLanguage(lang, function () {
       updateContent();
       updateActiveButton();
+
       window.location.hash = lang; // Update the hash in the URL to the selected language
+      updateHTMLLangAttr(lang);
     });
   });
 });
@@ -67,9 +80,11 @@ refs.allTranslateBtns.forEach(button => {
 // Check if the hash exists in the URL and set it as the selected language
 if (validLangs.includes(urlHash)) {
   localStorage.setItem(LANG_LS_KEY, urlHash); // Store the language hash in localStorage
+
   i18next.changeLanguage(urlHash, function () {
     updateContent();
     updateActiveButton();
+    updateHTMLLangAttr(urlHash);
   });
 } else {
   if (validLangs.includes(storedLang)) {
@@ -77,6 +92,7 @@ if (validLangs.includes(urlHash)) {
       updateContent();
       updateActiveButton();
       window.location.hash = storedLang; // Update the hash in the URL to the stored language
+      updateHTMLLangAttr(storedLang);
     });
   } else {
     const defaultLang = 'ua'; // Set the default language hash
@@ -85,6 +101,7 @@ if (validLangs.includes(urlHash)) {
       updateContent();
       updateActiveButton();
       window.location.hash = defaultLang; // Update the hash in the URL to the default language
+      updateHTMLLangAttr(defaultLang);
     });
   }
 }
