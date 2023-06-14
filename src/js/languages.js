@@ -3,6 +3,7 @@ import refs from './refs';
 import languages from '../languages/languages.json';
 
 const LANG_LS_KEY = 'lang';
+const metaDescriptionKey = 'metaDescription';
 const storedLang = localStorage.getItem(LANG_LS_KEY);
 const defaultLang = 'ua';
 const validLangs = ['ua', 'en']; // Define valid language hashes
@@ -27,6 +28,7 @@ i18next.init(
     updateContent();
     updateActiveButton();
     updateHTMLLangAttr(i18next.language);
+    updateMetaDescription();
   }
 );
 
@@ -61,6 +63,14 @@ function updateHTMLLangAttr(lang) {
   }
 }
 
+// Update meta description based on selected language
+function updateMetaDescription() {
+  const metaDescription = i18next.t(metaDescriptionKey);
+  document
+    .querySelector('meta[name="description"]')
+    .setAttribute('content', metaDescription);
+}
+
 // Language buttons event listeners
 refs.allTranslateBtns.forEach(button => {
   button.addEventListener('click', function () {
@@ -69,9 +79,10 @@ refs.allTranslateBtns.forEach(button => {
     i18next.changeLanguage(lang, function () {
       updateContent();
       updateActiveButton();
+      updateHTMLLangAttr(lang);
+      updateMetaDescription();
 
       window.location.hash = lang; // Update the hash in the URL to the selected language
-      updateHTMLLangAttr(lang);
     });
   });
 });
@@ -84,14 +95,17 @@ if (validLangs.includes(urlHash)) {
     updateContent();
     updateActiveButton();
     updateHTMLLangAttr(urlHash);
+    updateMetaDescription();
   });
 } else {
   if (validLangs.includes(storedLang)) {
     i18next.changeLanguage(storedLang, function () {
       updateContent();
       updateActiveButton();
-      window.location.hash = storedLang; // Update the hash in the URL to the stored language
+      updateMetaDescription();
       updateHTMLLangAttr(storedLang);
+
+      window.location.hash = storedLang; // Update the hash in the URL to the stored language
     });
   } else {
     const defaultLang = 'ua'; // Set the default language hash
@@ -99,8 +113,10 @@ if (validLangs.includes(urlHash)) {
     i18next.changeLanguage(defaultLang, function () {
       updateContent();
       updateActiveButton();
-      window.location.hash = defaultLang; // Update the hash in the URL to the default language
+      updateMetaDescription();
       updateHTMLLangAttr(defaultLang);
+
+      window.location.hash = defaultLang; // Update the hash in the URL to the default language
     });
   }
 }

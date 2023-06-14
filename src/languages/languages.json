@@ -8,7 +8,8 @@
     "about-title": "Про нас",
     "about-description-1": "Sky Union з’явився, як творче об’єднання, у 2022 році. Все почалось з розробки карти Святошинсько-Броварської лінії Київського метрополітену для популярної модифікації Metrostroi для гри Garry’s Mod. Проте, ті обмеження, з якими зіткнулася наша команда, змусили нас думати про розширення розробки.",
     "about-description-2": "Ukraine Subway Simulator – нова гра, в якій ви зможете відчути себе машиністом та опанувати базові навички в керуванні потягом. Ви зможете дізнатися, як працює метрополітен зсередини, та відчути себе повноцінним робітником. В грі буде присутня класифікація машиністів.",
-    "gallery-title": "Галерея"
+    "gallery-title": "Галерея",
+    "metaDescription": "Ласкаво просимо до Sky Union, інноваційної української команди незалежних розробників, заснованої у 2022 році. Ми присвячені створенню нових вражень, втіленню свіжих проектів та сприянню розвитку української геймдеву. Досліджуйте наші ігри та приєднуйтесь до нас у захоплюючій подорожі в світ захоплюючого геймплею."
   },
   "en": {
     "header-home": "Home",
@@ -19,6 +20,7 @@
     "about-title": "About us",
     "about-description-1": "Sky Union appeared as a creative association in 2022. It all started with the development of a map of the Svyatoshynsko-Brovarska line of the Kyiv subway for the popular Metrostroi modification for the game Garry's Mod. However, the limitations our team faced made us think about expanding the development.",
     "about-description-2": "Ukraine Subway Simulator is a new game in which you can feel like a train driver and master the basic skills of train operation. You will be able to learn how the subway works from the inside and feel like a full-fledged employee. The game will feature a classification of drivers.",
-    "gallery-title": "Gallery"
+    "gallery-title": "Gallery",
+    "metaDescription": "Welcome to Sky Union, an innovative Ukrainian indie development team founded in 2022. We are dedicated to creating new experiences, bringing fresh projects to life, and contributing to the vibrant landscape of Ukrainian gamemaking. Explore our games and join us on an exciting journey into the world of immersive and captivating gameplay."
   }
 }
