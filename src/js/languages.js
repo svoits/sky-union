@@ -66,9 +66,7 @@ function updateHTMLLangAttr(lang) {
 // Update meta description based on selected language
 function updateMetaDescription() {
   const metaDescription = i18next.t(metaDescriptionKey);
-  document
-    .querySelector('meta[name="description"]')
-    .setAttribute('content', metaDescription);
+  refs.metaDescription.setAttribute('content', metaDescription);
 }
 
 // Language buttons event listeners
