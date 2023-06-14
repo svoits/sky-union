@@ -14,4 +14,5 @@ export default {
   galleryList: document.querySelector('.gallery-list'),
   html: document.querySelector('html'),
   metaDescription: document.querySelector('meta[name="description"]'),
+  preloader: document.querySelector('.preloader'),
 };
