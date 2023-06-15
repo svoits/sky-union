@@ -46,12 +46,12 @@ function updateActiveButton() {
   const currentLang = i18next.language;
   refs.allTranslateBtns.forEach(button => {
     const lang = button.getAttribute('data-lang');
-    if (lang === currentLang) {
-      button.classList.add('active');
-      button.disabled = true;
-    } else {
+    if (lang !== currentLang) {
       button.classList.remove('active');
       button.disabled = false;
+    } else {
+      button.classList.add('active');
+      button.disabled = true;
     }
   });
 }
