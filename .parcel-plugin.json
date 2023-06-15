@@ -1,0 +1,8 @@
+{
+  "copy": [
+    {
+      "from": "_headers",
+      "to": "dist/"
+    }
+  ]
+}
