@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /sky-union/",
-    "prod": "parcel build src/*.html --public-url ./ --out-dir public"
+    "prod": "parcel build src/*.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "@parcel/transformer-sass": "^2.6.0",
     "@parcel/transformer-webmanifest": "^2.6.0",
     "parcel": "^2.6.0",
+    "parcel-plugin-copy": "^1.0.2",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
