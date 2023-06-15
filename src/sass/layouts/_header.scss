@@ -165,12 +165,31 @@
     display: block;
     content: '';
     border-bottom: solid 2px $main-accent-color;
+    -webkit-transform: scaleX(0) translateY(6px);
+    -ms-transform: scaleX(0) translateY(6px);
     transform: scaleX(0) translateY(6px);
+    -webkit-transition: -webkit-transform $transition;
+    transition: -webkit-transform $transition;
+    -o-transition: transform $transition;
     transition: transform $transition;
+    transition: transform $transition, -webkit-transform $transition;
   }
   &:hover::after {
+    -webkit-transform: scaleX(1) translateY(6px);
+    -ms-transform: scaleX(1) translateY(6px);
     transform: scaleX(1) translateY(6px);
   }
+
+  // &::after {
+  //   display: block;
+  //   content: '';
+  //   border-bottom: solid 2px $main-accent-color;
+  //   transform: scaleX(0) translateY(6px);
+  //   transition: transform $transition;
+  // }
+  // &:hover::after {
+  //   transform: scaleX(1) translateY(6px);
+  // }
 
   @media screen and (min-width: 1440px) {
     padding-top: 15px;
@@ -202,9 +221,29 @@
   padding-bottom: 6px;
   display: inline-block;
   cursor: pointer;
+  // &.active {
+  //   &::after {
+  //     border-bottom: 2px solid $main-accent-color;
+  //     transform: scaleX(1) translateY(6px);
+  //   }
+  // }
+
+  // &::after {
+  //   display: block;
+  //   content: '';
+  //   border-bottom: solid 2px $main-accent-color;
+  //   transform: scaleX(0) translateY(6px);
+  //   transition: transform $transition;
+  // }
+  // &:hover::after {
+  //   transform: scaleX(1) translateY(6px);
+  // }
+
   &.active {
     &::after {
       border-bottom: 2px solid $main-accent-color;
+      -webkit-transform: scaleX(1) translateY(6px);
+      -ms-transform: scaleX(1) translateY(6px);
       transform: scaleX(1) translateY(6px);
     }
   }
@@ -213,10 +252,18 @@
     display: block;
     content: '';
     border-bottom: solid 2px $main-accent-color;
+    -webkit-transform: scaleX(0) translateY(6px);
+    -ms-transform: scaleX(0) translateY(6px);
     transform: scaleX(0) translateY(6px);
+    -webkit-transition: -webkit-transform $transition;
+    transition: -webkit-transform $transition;
+    -o-transition: transform $transition;
     transition: transform $transition;
+    transition: transform $transition, -webkit-transform $transition;
   }
   &:hover::after {
+    -webkit-transform: scaleX(1) translateY(6px);
+    -ms-transform: scaleX(1) translateY(6px);
     transform: scaleX(1) translateY(6px);
   }
 }
