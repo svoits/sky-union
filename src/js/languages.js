@@ -48,8 +48,10 @@ function updateActiveButton() {
     const lang = button.getAttribute('data-lang');
     if (lang === currentLang) {
       button.classList.add('active');
+      button.disabled = true;
     } else {
       button.classList.remove('active');
+      button.disabled = false;
     }
   });
 }
