@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /sky-union/",
-    "prod": "parcel build src/*.html"
+    "prod": "parcel build src/*.html --public-url ./ --out-dir public"
   },
   "repository": {
     "type": "git",
