@@ -153,21 +153,13 @@
   padding: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  border: none;
-  cursor: pointer;
-  color: inherit;
-  font: inherit;
+
   font-size: 16px;
   line-height: 1.25;
 
   background-color: transparent;
   transform: scale(1);
   transition: transform $transition;
-
-  // &:hover,
-  // &:focus {
-  //   transform: scale(1.2);
-  // }
 
   &::after {
     display: block;
@@ -324,20 +316,18 @@
   gap: 32px;
 }
 
+.mobile-nav-item {
+  display: inline-flex;
+}
+
 .mobile-nav-link {
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
   font-size: 16px;
   line-height: 1.25;
   border: none;
   background-color: transparent;
   padding: 0;
-
-  // &:hover,
-  // &:focus {
-  //   transform: scale(1.2);
-  // }
+  cursor: pointer;
+  display: inline-block;
 
   &::after {
     display: block;
