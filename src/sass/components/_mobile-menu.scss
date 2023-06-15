@@ -17,16 +17,12 @@
     opacity: 1;
     visibility: visible;
   }
-  @media screen and (min-width: 768px) {
-    // display: none;
-  }
 }
 
 .mobile-menu-container {
   position: fixed;
   top: 108px;
   left: 0;
-  // width: 60%;
   width: 208px;
   height: 100vh;
   padding: 34px;
@@ -97,11 +93,6 @@
   border: none;
   background-color: transparent;
   padding: 0;
-
-  // &:hover,
-  // &:focus {
-  //   transform: scale(1.2);
-  // }
 
   &::after {
     display: block;
