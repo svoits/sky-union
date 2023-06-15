@@ -25,30 +25,36 @@ import refs from './refs';
     }
   });
 
-  refs.toHomeBtn.forEach(item => {
-    item.addEventListener('click', () => {
+  refs.toHomeLinks.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
       scrollToId('home');
     });
   });
-  refs.toAboutBtn.forEach(item => {
-    item.addEventListener('click', () => {
+  refs.toAboutLinks.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
       scrollToId('about');
     });
   });
-  refs.toGalleryBtn.forEach(item => {
-    item.addEventListener('click', () => {
+  refs.toGalleryLinks.forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
       scrollToId('gallery');
     });
   });
 
   function scrollToId(id) {
     const access = document.getElementById(id);
+
     access.scrollIntoView({ behavior: 'smooth' }, true);
+
     refs.burgerIcon.classList.add('active');
     refs.closeIcon.classList.remove('active');
     refs.mobileMenu.classList.remove('is-open');
     refs.mobileBackdrop.classList.remove('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', false);
+
     enableBodyScroll(document.body);
   }
   // Close the mobile menu on wider screens if the device orientation changes
@@ -60,6 +66,7 @@ import refs from './refs';
     refs.mobileMenu.classList.remove('is-open');
     refs.mobileBackdrop.classList.remove('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', false);
+
     enableBodyScroll(document.body);
   });
 })();
