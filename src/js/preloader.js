@@ -10,6 +10,7 @@ window.addEventListener('load', function () {
   function hidePreloader() {
     refs.preloader.style.display = 'none';
     enableBodyScroll(document);
+    document.querySelector('body').style.overflow = 'auto';
   }
 
   setTimeout(hidePreloader, delayDuration);
