@@ -9,3 +9,21 @@
 
 /*.png
   Cache-Control: public, max-age=31536000
+
+/*.js
+  Cache-Control: public, max-age=31536000
+
+/*.css
+  Cache-Control: public, max-age=31536000
+
+/*.woff2
+  Cache-Control: public, max-age=31536000
+
+/*.woff
+  Cache-Control: public, max-age=31536000
+
+/*.ttf
+  Cache-Control: public, max-age=31536000
+
+/*.eot
+  Cache-Control: public, max-age=31536000
