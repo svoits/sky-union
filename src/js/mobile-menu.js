@@ -12,7 +12,7 @@ import refs from './refs';
     refs.burgerIcon.classList.toggle('active');
     refs.closeIcon.classList.toggle('active');
 
-    // const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
+    const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
     // scrollLockMethod(document);
   }
 
@@ -35,6 +35,6 @@ import refs from './refs';
     refs.mobileBackdrop.classList.remove('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', false);
 
-    // enableBodyScroll(document);
+    enableBodyScroll(document);
   });
 })();
