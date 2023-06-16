@@ -35,6 +35,6 @@ import refs from './refs';
     refs.mobileBackdrop.classList.remove('is-open');
     refs.openMenuBtn.setAttribute('aria-expanded', false);
 
-    enableBodyScroll(document);
+    // enableBodyScroll(document);
   });
 })();
