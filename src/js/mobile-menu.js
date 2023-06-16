@@ -9,8 +9,8 @@ import refs from './refs';
     refs.openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     refs.mobileMenu.classList.toggle('is-open');
     refs.mobileBackdrop.classList.toggle('is-open');
-    // refs.burgerIcon.classList.toggle('active');
-    // refs.closeIcon.classList.toggle('active');
+    refs.burgerIcon.classList.toggle('active');
+    refs.closeIcon.classList.toggle('active');
 
     const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
     scrollLockMethod(document);
