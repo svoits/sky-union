@@ -27,13 +27,9 @@
   padding: 34px;
   background-color: $secondary-bg-color;
   transform: translateX(-100%);
-  visibility: hidden;
-  opacity: 0;
-  transition: transform $transition, visibility $transition, opacity $transition;
+  transition: transform $transition;
   &.is-open {
     transform: translateX(0);
-    visibility: visible;
-    opacity: 1;
   }
 }
 
