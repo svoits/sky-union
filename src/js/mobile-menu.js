@@ -12,8 +12,8 @@ import refs from './refs';
     refs.burgerIcon.classList.toggle('active');
     refs.closeIcon.classList.toggle('active');
 
-    const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
-    scrollLockMethod(document);
+    // const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
+    // scrollLockMethod(document);
   }
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
