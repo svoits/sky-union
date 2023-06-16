@@ -13,7 +13,7 @@ import refs from './refs';
     refs.closeIcon.classList.toggle('active');
 
     const scrollLockMethod = !isMenuOpen ? disableBodyScroll : enableBodyScroll;
-    // scrollLockMethod(document);
+    scrollLockMethod(document);
   }
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
