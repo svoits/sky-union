@@ -44,6 +44,7 @@
 }
 
 .mobile-lang-btn {
+  position: relative;
   border: none;
   background-color: transparent;
   font: inherit;
@@ -57,19 +58,23 @@
   &.active {
     &::after {
       border-bottom: 2px solid $main-accent-color;
-      transform: scaleX(1) translateY(6px);
+      transform: scaleX(1);
     }
   }
 
   &::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
     display: block;
     content: '';
     border-bottom: solid 2px $main-accent-color;
-    transform: scaleX(0) translateY(6px);
+    transform: scaleX(0);
     transition: transform $transition;
   }
   &:hover::after {
-    transform: scaleX(1) translateY(6px);
+    transform: scaleX(1);
   }
 }
 
@@ -80,6 +85,7 @@
 }
 
 .mobile-nav-link {
+  position: relative;
   font: inherit;
   color: inherit;
   cursor: pointer;
@@ -90,13 +96,17 @@
   padding: 0;
 
   &::after {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
     display: block;
     content: '';
     border-bottom: solid 2px $main-accent-color;
-    transform: scaleX(0) translateY(6px);
+    transform: scaleX(0);
     transition: transform $transition;
   }
   &:hover::after {
-    transform: scaleX(1) translateY(6px);
+    transform: scaleX(1);
   }
 }
