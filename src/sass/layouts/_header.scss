@@ -150,6 +150,7 @@
 }
 
 .header-nav-link {
+  position: relative;
   padding: 0;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -162,12 +163,18 @@
   transition: transform $transition;
 
   &::after {
-    margin-top: 6px;
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 100%;
     display: block;
     content: '';
     border-bottom: solid 2px $main-accent-color;
     transform: scaleX(0);
     transition: transform $transition;
+    @media screen and (min-width: 1440px) {
+      bottom: 7px;
+    }
   }
   &:hover::after {
     transform: scaleX(1);
@@ -193,6 +200,7 @@
 }
 
 .lang-btn {
+  position: relative;
   border: none;
   background-color: transparent;
   font: inherit;
@@ -212,7 +220,10 @@
   }
 
   &::after {
-    margin-top: 6px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
     display: block;
     content: '';
     border-bottom: solid 2px $main-accent-color;
